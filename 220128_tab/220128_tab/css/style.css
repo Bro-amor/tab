@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#tabBtnBox {
+    overflow: auto;
+}
+.tabBtn {
+    float: left;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    border: 1px solid #777;
+/*    border-collapse: collapse;*/          /*표한테만 사용*/
+    color: #333;
+    cursor: pointer;
+    margin-left: -1px;
+    margin-top: 4px;
+    user-select: none;
+}
+.tabBtn:first-of-type {
+    margin-left: 0;
+}
+.tabBtn:hover {
+    background-color: #f0f0f0;
+}
+.tactive {
+    height: 44px;
+    margin-top: 0;
+    padding-top: 4px;
+    color: #06c;
+    border-color: #06c;
+    position: relative;
+    z-index: 2;
+}
+.tabCont {
+    display: none;
+}
+.tabCont:first-of-type {
+    display: block;
+}
+
+
+
+
+
+
+
+#acc {
+    width: 350px;
+    margin: 30px;
+}
+.acctab {
+    border: 1px solid #aaa;
+    border-bottom: none;
+    overflow: hidden;
+}
+.acctab:first-of-type {
+    border-radius: 6px 6px 0 0;
+}
+.acctab:last-of-type {
+    border-bottom: 1px solid #aaa;
+    border-radius: 0 0 6px 6px;
+}
+.acctabBtn {
+    padding: 0.6em 1em;
+    cursor: pointer;
+    user-select: none;
+}
+.acctabBtn:hover {
+    background-color: #f0f0f0;
+}
+.caret {
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    border-top: 5px solid #aaa;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    float: right;
+    margin-top: 9px;
+    transition: all 0.4s;
+}
+.rev {
+    transform: rotate(180deg);
+}
+.acctabCont {
+    padding: 0.6em 1em;
+    background-color: #e0e0e0;
+    padding-bottom: 2em;
+    display: none;
+}
+.acctab:first-of-type .acctabCont {
+    display: block;
+}
+
+
+
+.btn {
+    border: none;
+    border-radius: 6px;
+    padding: 0.4em 1.2em;
+    display: block;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+.btn-gray {
+    background-color: gray;
+    color: white;
+}
+
+
+
+
+
+
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+#modalwin {
+    opacity: 0;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    width: calc(100% - 30px);
+    max-width: 600px;
+    overflow: hidden;
+}
+#modaltitle {
+    background-color: #06c;
+    color: white;
+    padding: 0.4em 15px;
+}
+#modalcont {
+    padding: 0.8em 15px;
+    border-bottom: 1px solid #ccc;
+}
+#modalimage {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+#modalfooter {
+    padding: 0.5em 15px;
+    text-align: right;
+}
+#modalfooter .btn {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

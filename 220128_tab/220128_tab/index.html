@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>탭 기능 연습</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta name="author" content="JY Jeong" />
+        <link href="css/style.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    
+        <div id="tabBtnBox">
+            <div class="tabBtn tactive">HTML</div>
+            <div class="tabBtn">CSS</div>
+            <div class="tabBtn">JavaScript</div>
+            <div class="tabBtn">jQuery</div>
+        </div>
+        
+        
+        <div id="tabContBox">
+            <div class="tabCont">
+                HTML이란 Hyper Text Mark-up Language의 준말로 기존의 문서를 초월한 전자문서를 의미한다.
+                하이퍼링크라는 기술을 통해 문서간 이동이 용이하고 각종 태그를 통해 구조화된 문서를 제작할 수 있다.
+                최근에는 Semantic 태그가 추가되면서 단순히 모양이나 구조에 그치지 않고 내용과 의미를 내포하는 태그로 발전하게 되었다.
+                따라서 검색과 인공지능 지도학습의 학습 데이터로 사용이 용이하게 되었다.
+            </div>
+            <div class="tabCont">
+                CSS란 Cascade Style Sheet의 준말로 폭포수처럼 부모 또는 조상의 스타일이 자손에게 상속되는 속성을 나타낸다. 스타일을 적용시킬 어떤 특정한 요소를 선택하는 구문을 선택자라고 한다.
+                하나의 선택자에게 여러 스타일을 지정해 놓은 묶음을 Rule이라고 부른다.
+                Rule 안의 내용에서는 하나의 스타일을 속성명:속성값 의 문법으로 작성하며 하나의 스타일 구문 끝에는 반드시 ;(세미콜론)으로 문장의 끝을 알려야 한다.
+            </div>
+            <div class="tabCont">
+                JavaScript란 넷스케이프 브라우저 부터 시작된 html문서를 콘트롤하기 위한 스크립트 언어로 한줄 한줄 차례대로 작업을 수행하는 인터프리터 언어이다.
+                별도로 컴파일 과정은 필요 없으나 사실상 브라우저가 컴파일을 하는 것으로 볼 수 있다.
+            </div>
+            <div class="tabCont">
+                제이쿼리의 모토는 Write less. Do more이다.
+                적게 쓰고 많이 하자.
+                자바스크립트를 짧게 쓸 수 있도록 도와주는 라이브러리이다.
+                몇가지 유용한 이펙트들을 포함하고 있다.
+            </div>
+        </div>
+        
+        
+        
+        <hr />
+        
+        <button type="button" class="btn btn-gray modalbtn" modal-image="images/picture1.jpg" modal-title="HTML" modal-cont="HTML은 어쩌구 저쩌구 HTML은 어쩌구 저쩌구 HTML은 어쩌구 저쩌구 HTML은 어쩌구 저쩌구 HTML은 어쩌구 저쩌구 ">
+            HTML
+        </button>
+        <button type="button" class="btn btn-gray modalbtn" modal-image="images/picture2.jpg" modal-title="CSS" modal-cont="CSS는 이렇고 저렇고 CSS는 이렇고 저렇고 CSS는 이렇고 저렇고 CSS는 이렇고 저렇고 CSS는 이렇고 저렇고 ">
+            CSS
+        </button>
+        <button type="button" class="btn btn-gray modalbtn" modal-title="JavaScript" modal-cont="JavaScript는 어렵지 않아요">
+            JavaScript
+        </button>
+        
+        <div id="acc">
+            <div class="acctab">
+                <div class="acctabBtn">자장면 <span class="caret rev"></span></div>
+                <div class="acctabCont">
+                    춘장을 라드유에 볶아서 삶은 면 위에 얹어서 내는 요리.
+                    한국에서는 춘장에 카라멜을 섞어서 팔기 시작하면서
+                    검정색 짜장이 보편화 되었다.
+                    춘장을 라드유에 볶아서 삶은 면 위에 얹어서 내는 요리.
+                    한국에서는 춘장에 카라멜을 섞어서 팔기 시작하면서
+                    검정색 짜장이 보편화 되었다.
+                </div>
+            </div>
+            <div class="acctab">
+                <div class="acctabBtn">짬뽕 <span class="caret"></span></div>
+                <div class="acctabCont">
+                    맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 맛있는 짬뽕 
+                </div>
+            </div>
+            <div class="acctab">
+                <div class="acctabBtn">탕수육 <span class="caret"></span></div>
+                <div class="acctabCont">
+                    탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 탕 수 육 
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div id="modal">
+            <div id="modalwin">
+                <div id="modaltitle">Modal window title here.</div>
+                <div id="modalcont">
+                    Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet
+                    Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet
+                    Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet 
+                </div>
+                <div id="modalfooter">
+                    <button class="btn btn-gray modalclose" type="button">닫기</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <script src="script/script.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
